@@ -1,4 +1,4 @@
-# Matematics-Website
+# Mathematics-Website
 ### Organized YouTube Videos on website.
 
 Website Link
