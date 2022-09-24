@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="Styles/css.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Animation Link -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Head Icon -->
+    
+   <link rel="icon" type="image/x-icon" href="Images/play-logo.png">
+      
+
+    <title>Mathematics</title>
+  </head>
+  <body>
+    <div class="scroll-top" onclick="location.href='#home';">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <div  class="bg-white animate__animated animate__slideInRight" id="navbar">
+        <div class="nav_div">
+          <nav>
+            <a href="#home" onclick="menu('2');">Home</a><br><br>
+            <a href="#about" onclick="menu('2');">About</a><br><br>
+
+              <div class="dropdown">
+              <a class="dropbtn">Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="Classes/class10.html" onclick="menu('2');">Class 10</a>
+                  <a href="Classes/class11.html" onclick="menu('2');">Class 11</a>
+                  <a href="Classes/class12.html" onclick="menu('2');">Class 12</a>
+                </div>
+              </div><br><br>
+            <a href="#school" onclick="menu('2');">School</a>
+          </nav>
+
+      </div>
+    </div>
+
+    <header>
+      <div class="container-fluid bg-white header-cont fixed-top">
+
+          <div style="position: relative;z-index: 4;position: absolute;left: 0;top: 0;">
+            <img src="Images/play-logo.png" class="logo-img">
+            <p class="logo-text">MATHEMATICS</p>
+          </div>
+
+        <div class="header">
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+
+              <div class="dropdown">
+              <a class="dropbtn" >Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="Classes/class10.html">Class 10</a>
+                  <a href="Classes/class11.html">Class 11</a>
+                  <a href="Classes/class12.html">Class 12</a>
+                </div>
+              </div>
+            <a href="#school">School</a>
+          </nav>
+        </div>
+        <div class="menu_button">
+          <button  class="btn menu_bar">
+
+            <!-- Bars Icon -->
+
+            <svg  id="menu_btn" style="margin-right: 10px;background-color: white;"  onclick="menu('1')" class="menu_btn " width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+            <!-- Cross Icon -->
+
+            <span id="menu_cross" onclick="menu('2');" style="display: none;"><svg style="margin-right: 10px;background-color: white;" class="menu_btn" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></span>
+        
+          </button>
+        </div>
+      </div>
+    </header>
+    <section id="home">
+      <div class="container-fluid" style="padding-top: 80px;padding-bottom: 100px;">
+        <div class="row">
+          <div class="col-lg-6">
+
+          <img src="Images/play-logo.png" class=" mt-2 header_img">
+          </div>
+          <div class="col-lg-6 header-col">
+            <h1><b>Mathematics</b></h1>
+            <p>This site contains video lectures of Mathematics of class 10<sup>th</sup> , 11<sup>th</sup>,12<sup>th</sup> .</p>
+            <div class="d-flex justify-content-left align-items-center">
+              <a href="Classes/class10.html" class="btn header_btn">Class 10 <br>Lectures</a>
+              <a href="Classes/class11.html" class="btn header_btn">Class 11<br>Lectures</a>
+              <a href="Classes/class12.html" class="btn header_btn">Class 12<br>Lectures</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="about">
+        <div class="container-fluid" style="padding-top: 100px;padding-bottom: 100px;">
+        <div class="row ">
+          
+          <div class="col-lg-6 about-col">
+            <h1>About Me</h1>
+            <p>I am Babu Lal Mali, PGT(Mathematics), DMS RIE Ajmer. I have been teaching mathematics to classes X, XI, XII of CBSE Students of DMS Ajmer since 2009. Before this I worked as TGT (Mathematics) in the same school from 2004 to 2009.</p>
+            <br>
+            <span>" एक ही कदम चलना है सदा और एक ही कदम जो चलता चला जाता है, वह अनंत फासले तय कर लेता है । "</span>
+          </div>
+          <div class="col-lg-6">
+
+          <img src="Images/1.jpg" class=" mt-2 about_img">
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="school">
+        <div class="container header-col" style="padding-top: 100px;padding-bottom: 100px;">
+
+            <h1 style="text-align: center;"><b>School</b></h1>
+
+          <div class="table-responsive">
+       <table class="table-bordered table">
+        <thead >
+        <tr>
+          <th><strong>S.No</strong></th>
+          <th style="text-align: center;" ><strong>Topic</strong></th>
+          <th><strong>Link</strong></th>
+        </tr>
+    </thead>
+          <tr>
+              <td>1.</td>
+              <td class="t_con">Student Exam Seating Arrangement of Annual Exam 2020-21 </td>
+              <td style="text-align: center;"><a class="btn btn-primary t_btn" href="https://drive.google.com/file/d/1Ec1TPujAn2uMJh0eKIVbHgbfT4ZYioWr/view?usp=sharing">Click Here</a></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td class="t_con">Excel Sheet for Test/Exam Marks entry by the subject teacher</td>
+              <td style="text-align: center;"><a class="btn btn-success t_btn" href="main/MarksEntry_Sheet.xlsx">Open</a></td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td class="t_con">Google form for setting password before uploading excel sheet with marks/grades by the subject teacher</td>
+              <td style="text-align: center;"><a class="btn btn-primary t_btn"href="https://forms.gle/iW7r88qtF7Pgg1ef8">Click here</a></td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td class="t_con">Google form for uploading excel sheet filled with marks/grades by the subject teacher</td>
+              <td style="text-align: center;"><a class="btn btn-primary t_btn"href="https://forms.gle/tecxMaxFj2tigCoB8">Click here</a></td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td class="t_con">Test Names, Subject Names and Maximum Marks for various Tests and Subjects</td>
+              <td style="text-align: center;"><a class="btn btn-dark t_btn"href="https://drive.google.com/file/d/1HSt29kKSEzVeSlavL5-p2m7yzqcuXT3t/view?usp=sharing">Link</a></td>
+            </tr>
+       </table>
+   </div>
+        
+        </div>
+        
+      </section>
+
+        <div class="container-fluid" style="background-color: #0000ff;padding-top: 30px;padding-bottom: 60px;">
+          <p  class="footer-text">Designed and Developed by Yash Kumar Saini <br> © 2021 All Rights Reserved.</p>
+        </div>
+
+
+
+
+
+      
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="
+    sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+      
+
+      function play(link)
+      {
+        var x = link;
+        document.getElementById("youtube").src = "https://www.youtube.com/embed/"+x+"?&autoplay=1&rel=0";
+        document.getElementById("topic").innerHTML = document.getElementById(x).innerHTML;
+        var all = document.getElementsByClassName('list_item');
+          for (var i = 0; i < all.length; i++) 
+          {
+            all[i].style.backgroundColor = 'white';
+          }
+        document.getElementById(x).style.backgroundColor = "#dfdfdf";
+
+
+      }
+      function customClass(classs)
+      {
+        var x = classs;
+        if(x==10)
+        {
+          document.getElementById("home-tab").click();
+          var y = "mcWXly_4K4A";
+          document.getElementById("youtube").src = "https://www.youtube.com/embed/"+y;
+        }
+        else if(x==11)
+        {
+          document.getElementById("profile-tab").click();
+          var y = "0hSyWZokil8";
+          document.getElementById("youtube").src = "https://www.youtube.com/embed/"+y;
+        }
+        else
+        {
+          document.getElementById("contact-tab").click();
+          var y = "CnvnMG2D5Io";
+          document.getElementById("youtube").src = "https://www.youtube.com/embed/"+y;
+        }
+      }
+    </script>
+     <script type="text/javascript">
+    function menu(value)
+        {
+            if(value==1)
+            {
+                document.getElementById("menu_btn").style.display="none";
+                document.getElementById("menu_cross").style.display="inline";
+                document.getElementById("navbar").style.display="block";
+
+                document.documentElement.style.position = "fixed";
+            }
+            else if(value==2)
+            {
+                document.getElementById("navbar").style.display="none";
+                document.getElementById("menu_btn").style.display="inline";
+                document.getElementById("menu_cross").style.display="none";
+
+                document.documentElement.style.position = "static";
+            }
+        }
+      </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

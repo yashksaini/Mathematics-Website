@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- Local CSS Files Start -->
+
+    <link rel="stylesheet" type="text/css" href="../Styles/css.css">
+
+    <link rel="stylesheet" type="text/css" href="../Styles/class.css">
+
+    <!-- Head Icon -->
+    
+   <link rel="icon" type="image/x-icon" href="../Images/play-logo.png">
+
+    <!-- Local CSS Files End -->
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  	<!-- Animation Link -->
+
+  	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
+
+    <title>Class 10</title>
+  </head>
+  <body>
+
+<!-- Header Start --->
+
+    <div  class="bg-white animate__animated animate__slideInRight" id="navbar">
+        <div class="nav_div">
+          <nav>
+            <a href="../index.html#home" onclick="menu('2');">Home</a><br><br>
+            <a href="../indexhome.html#about" onclick="menu('2');">About</a><br><br>
+
+              <div class="dropdown">
+              <a class="dropbtn">Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html" onclick="menu('2');">Class 10</a>
+                  <a href="class11.html" onclick="menu('2');">Class 11</a>
+                  <a href="class12.html" onclick="menu('2');">Class 12</a>
+                </div>
+              </div><br><br>
+            <a href="../index.html/#school" onclick="menu('2');">School</a>
+          </nav>
+
+      </div>
+    </div>
+
+    <header>
+      <div class="container-fluid bg-white header-cont fixed-top">
+
+          <div style="position: relative;z-index: 4;position: absolute;left: 0;top: 0;">
+            <img src="../Images/play-logo.png" class="logo-img">
+            <p class="logo-text">MATHEMATICS</p>
+          </div>
+
+        <div class="header">
+          <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+
+              <div class="dropdown">
+              <a class="dropbtn" >Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html">Class 10</a>
+                  <a href="class11.html">Class 11</a>
+                  <a href="class12.html">Class 12</a>
+                </div>
+              </div>
+            <a href="../index.html#school">School</a>
+          </nav>
+        </div>
+        <div class="menu_button">
+          <button  class="btn menu_bar">
+
+            <!-- Bars Icon -->
+
+            <svg  id="menu_btn" style="margin-right: 10px;background-color: white;"  onclick="menu('1')" class="menu_btn " width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+            <!-- Cross Icon -->
+
+            <span id="menu_cross" onclick="menu('2');" style="display: none;"><svg style="margin-right: 10px;background-color: white;" class="menu_btn" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></span>
+        
+          </button>
+        </div>
+      </div>
+    </header>
+<!-- Header End --->
+
+<!-- Class Start -->
+
+    <div class="container-fluid" style="padding-top:100px;padding-bottom: 150px;">
+      <div class="row">
+        <div class="col-lg-7 class_play_container">
+          <div class="class_play">
+              <iframe id="youtube" src="https://www.youtube.com/embed/mcWXly_4K4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"  allowfullscreen></iframe>
+          </div>
+          <div class="class_play_text">
+            <div class="play_text">
+              <h6 id="topic"></h6>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="col-lg-5 class_play_container" id="myUL">
+          
+      <h1 style="text-align: center;margin-top: 10px;">Class 10 Video Lectures</h1>
+          <div class="d-flex justify-content-center align-items-center">
+
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for lecture.." title="Type in a name">
+
+          <button class="btn-primary btn s_btn"><i class="fas fa-search"></i></button>
+          </div>
+
+          
+
+          <!-- Class 10 Chapter 0 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c0" aria-expanded="false" aria-controls="collapseTwo">
+                           General Mathematics and Maths Activities  <span class="badge bg-light tp"> 7 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c0" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="mcWXly_4K4A" onclick="play('mcWXly_4K4A')">1. Vedic Maths_Practical Tricks <span class="badge bg-white float-end"> 13min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="NIsKFHSKlME" onclick="play('NIsKFHSKlME')">2. Find out Divisors of a number <span class="badge bg-white float-end"> 6min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="4f7q4Aa4-mA" onclick="play('4f7q4Aa4-mA')">3. Dealing with Integers <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="VR7Bixest90" onclick="play('VR7Bixest90')">4. Representing Numbers on Number line <span class="badge bg-white float-end"> 13min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="lozs-TFKyWU" onclick="play('lozs-TFKyWU')">5. How to find out LCM_All the Three Methods <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wlnQqpvqWSw" onclick="play('wlnQqpvqWSw')">6. How to find HCF (Highest Common Factor)_All the Three Methods <span class="badge bg-white float-end"> 35min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Fpaml7h9fAk" onclick="play('Fpaml7h9fAk')">1. Maths Activity_1 graphical representation of pair of linear equations <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 0 End -->
+                    
+<!-- Class 10 Chapter 1 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c1" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 1 ( Real Numbers )  <span class="badge bg-light tp"> 17 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="lozs-TFKyWU" onclick="play('lozs-TFKyWU')">1. How to find out LCM <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wlnQqpvqWSw" onclick="play('wlnQqpvqWSw')">2. How to find HCF (Highest Common Factor)_All Three Methods <span class="badge bg-white float-end">34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="IY6NRhcsM0g" onclick="play('IY6NRhcsM0g')">3. Euclid's Division Lemma with examples <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="44bN0xf825k" onclick="play('44bN0xf825k')">4. Euclid's Division Lemma with More NCERT Questions &nbsp;&nbsp;&nbsp; <span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="7UKtJvijUB4" onclick="play('7UKtJvijUB4')">5. Euclid's Division Algorithm, its use to find out HCF of two numbers with an example <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="FFRVJ8s48q0" onclick="play('FFRVJ8s48q0')">6. To find out HCF of three numbers using Euclid's Division Algorithm <span class="badge bg-white float-end"> 7min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="Jv4NLSqdv18" onclick="play('Jv4NLSqdv18')">7. Practical Applications of HCF (Highest Common Factor) <span class="badge bg-white float-end"> 28min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="5mLhVkVV4Fw" onclick="play('5mLhVkVV4Fw')">8. Fundamental Theorem of Arithmetic_NCERT Examples and  Questions <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="hJ7ZVAHxE-Y" onclick="play('hJ7ZVAHxE-Y')">9. Relationship between HCF and LCM and its applications <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="95QwGVIdKps" onclick="play('95QwGVIdKps')">10. Some Questions of NCERT Exercise 1.2 <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="Zcv7zVqYfLE" onclick="play('Zcv7zVqYfLE')">11. Proof: If p divides a^2, then p divides a. <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="HcvrTk8cfdc" onclick="play('HcvrTk8cfdc')">12. Square root p is always irrational where p is a prime number. <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="jyx9Vbneq2E" onclick="play('jyx9Vbneq2E')">13. Proof of Irrationality of some numbers <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="jZfbIcALZ1M" onclick="play('jZfbIcALZ1M')">14. Real Number System_Natural Numbers, Whole Numbers, Integers, Rational and Irrational Numbers <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="sjgmYA6tZrg" onclick="play('sjgmYA6tZrg')">15. Terminating Decimal Expansion of a Rational Number <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="DWDvXxIGcYE" onclick="play('DWDvXxIGcYE')">16. Non-Terminating Repeating Decimal Expansion of a Rational Number<span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="xoIsdN_G5Pk" onclick="play('xoIsdN_G5Pk')">17. To Express a rational number p/q in decimal form without actual division and also to find out after how many places of decimal it terminates <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 1 End -->
+
+<!-- Class 10 Chapter 2 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c2" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 2 ( Polynomials )  <span class="badge bg-light tp"> 7 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="d2FhI4Cj8VQ" onclick="play('d2FhI4Cj8VQ')">1. Algebraic Expression, Polynomials as a special algebraic expression <span class="badge bg-white float-end"> 11min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="DLVa9RFk3-M" onclick="play('DLVa9RFk3-M')">2. Terms and Degree of a polynomial and Classification of polynomials on the basis of terms and degrees <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="nZnZLrTlpqE" onclick="play('nZnZLrTlpqE')">3. Value and Zero(es) of a Polynomial, Algebraic Method to find out Zero(es) of a Polynomial <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="x-esGI0zfm8" onclick="play('x-esGI0zfm8')">4. Geometrical Meaning of the Zeroes of a Polynomial <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="ugTgCMKGWdY" onclick="play('ugTgCMKGWdY')">5. Geometrical Meaning of the Zeroes of a Polynomial ...continued <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="PtsOmdQwCfI" onclick="play('PtsOmdQwCfI')">6. Relationship between zeroes and coefficients of a quadratic polynomial <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Fw3y5Fm4uHg" onclick="play('Fw3y5Fm4uHg')">7. Relationship between zeroes and coefficients of a quadratic polynomial_ ...more questions <span class="badge bg-white float-end"> 11min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 2 End -->
+
+<!-- Class 10 Chapter 3 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c3" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 3 (Pair of Linear Equation in Two Varibles) <span class="badge bg-light tp"> 12 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="7h4WJJim7FM" onclick="play('7h4WJJim7FM')">1. Solution of a Linear equation in two variables and its geometrical meaning  <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="VVRZFNkAgNM" onclick="play('VVRZFNkAgNM')">2. Situations which are represented algebraically by a pair of linear equations in two variables and representing these equations geometrically <span class="badge bg-white float-end"> 27min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="pxnquVL-78U" onclick="play('pxnquVL-78U')">3. Behaviour of lines representing a pair of linear equations in two variables and the existence of solutions <span class="badge bg-white float-end"> 42min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="GnF-QaxaBHw" onclick="play('GnF-QaxaBHw')">4. Algebraic method to find the Behaviour of lines representing a pair of linear equations in two variables and the existence of solutions <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="VFms1q7kpeA" onclick="play('VFms1q7kpeA')">5. Graphical method to find the Solution of a pair of linear equations in two variables<span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="vPAC-RKLaEQ" onclick="play('vPAC-RKLaEQ')">6. Substitution method of solving a pair of linear equations in two variables<span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="mQGKDvpKcxY" onclick="play('mQGKDvpKcxY')">7. Substitution method of solving a pair of linear equations in two variables ….continued <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="3pTJG2XrEXA" onclick="play('3pTJG2XrEXA')">8. More Questions using Substitution Method <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="mK-djQzZ1O4" onclick="play('mK-djQzZ1O4')">9. Elimination Method of solving a pair of linear equations in two variables <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="PsmtRS7vbtY" onclick="play('PsmtRS7vbtY')">10. More Questions using Elimination Method <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="r9njkCR64ac" onclick="play('r9njkCR64ac')">11. Equations Reducible to a Pair of Linear Equations in Two Variables<span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Kfol_g1zwwU" onclick="play('Kfol_g1zwwU')">12. Word Problems on equations reducible to a Pair of Linear Equations in Two Variables <span class="badge bg-white float-end"> 34min <i class="far fa-play-circle"></i></span></li>
+
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 3 End -->
+
+<!-- Class 10 Chapter 4 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c4" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 4 ( Quadratic Equations ) <span class="badge bg-light tp"> 5 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c4" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="_bKbIlMGvyU" onclick="play('_bKbIlMGvyU')">1.Quadratic Equation in real life situation and its standard form <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="PwcuHJa1UW0" onclick="play('PwcuHJa1UW0')">2. Roots of a Quadratic equation and solution of a Quadratic Equation by Factorisation  <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="bodFROrm9rk" onclick="play('bodFROrm9rk')">3. Solution of a Quadratic equation using Quadratic Formula  <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="P9C3bkZjJKE" onclick="play('P9C3bkZjJKE')">4. Word problems based on Quadratic equation <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="eGEfQYwoYLc" onclick="play('eGEfQYwoYLc')">5. Nature of roots of a Quadratic equation  <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 4 End -->
+
+<!-- Class 10 Chapter 6 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c6" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 6 ( Triangles ) <span class="badge bg-light tp"> 4 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="Z7g90hLdM5g" onclick="play('Z7g90hLdM5g')">1. Similar Figures and Criteria for similarity of two polygons <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="L_Q3iLjCtYY" onclick="play('L_Q3iLjCtYY')">2. Basic Proportionality Theorem_ Verification using Geogebra <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="cEYrAGZZJ4Q" onclick="play('cEYrAGZZJ4Q')">3. To prove Basic Proportionality Theorem <span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wzpbdci7ymU" onclick="play('wzpbdci7ymU')">4. To prove Converse of Basic Proportionality Theorem <span class="badge bg-white float-end"> 12min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 6 End -->
+
+<!-- Class 10 Chapter 8 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c8" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 8 ( Introduction to Trigonometry ) <span class="badge bg-light tp"> 10 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c8" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="et-Wz7W-eAk" onclick="play('et-Wz7W-eAk')">1. Trigonometry: An Introduction and Trigonometric Ratios <span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="j-74oSiMV48" onclick="play('j-74oSiMV48')">2. Given one Trigonometric Ratio,finding Others <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="okrIjyRZYO4" onclick="play('okrIjyRZYO4')">3. More Questions on Trigonometric Ratios  <span class="badge bg-white float-end"> 33min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="RWOn0JCdpjk" onclick="play('RWOn0JCdpjk')">4. Trigonometric Ratios of some specific angles  <span class="badge bg-white float-end"> 43min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="CslDZWPQWLg" onclick="play('CslDZWPQWLg')">5. Questions related to Trigonometric Ratios of 0^0,30^0, 45^0, 60^0 and 90^0   <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="QGyfvwAbDdg" onclick="play('QGyfvwAbDdg')">6. Trigonometric Identities <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="dpAE8viRuVU" onclick="play('dpAE8viRuVU')">7. To Express all Trigonometric Ratios in terms of one Trigonometric Ratio <span class="badge bg-white float-end">23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="sykFxML8IdM" onclick="play('sykFxML8IdM')">8. Simple Questions on Trigonometric Identities   <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="o049iym9N6o" onclick="play('o049iym9N6o')">9.Questions on Trigonometric Identities <span class="badge bg-white float-end"> 12min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="-Pyealgbh8Q" onclick="play('-Pyealgbh8Q')">10. More Questions on Trigonometric Identities  <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 8 End -->
+
+<!-- Class 10 Chapter 9 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10c9" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 9 ( Some Applications of Trigonometry ) <span class="badge bg-light tp"> 3 </span>
+                          </button>
+                        </h2>
+                        <div id="c10c9" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="JNeqqU_WLIk" onclick="play('JNeqqU_WLIk')">1. Line of sight, Angle of elevation and Angle of depression and Some Practical problems of trigonometry <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="oniKIbP9Ezk" onclick="play('oniKIbP9Ezk')">2. >Practical Problems of trigonometry <span class="badge bg-white float-end">27min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="Qy0Ep9PZgzQ" onclick="play('Qy0Ep9PZgzQ')">3. Practical Problems of trigonometry… continued  <span class="badge bg-white float-end"> 17min <i class="far fa-play-circle"></i></span></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 10 Chapter 9 End -->
+
+        </div>
+      </div>
+    </div>
+    
+<!-- Class End -->
+
+<!-- Footer Start-->
+
+      	<div class="container-fluid" style="background-color: #0000ff;padding-top: 30px;padding-bottom: 60px;">
+        	<p  class="footer-text">Designed and Developed by Yash Kumar Saini <br> © 2021 All Rights Reserved.</p>
+      	</div>
+
+<!-- Footer End-->
+
+
+
+
+
+      
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="
+    sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+      
+
+      function play(link)
+      {
+        document.documentElement.scrollTop = 0;
+        var x = link;
+        document.getElementById("youtube").src = "https://www.youtube.com/embed/"+x+"?&autoplay=1&rel=0";
+        document.getElementById("topic").innerHTML = document.getElementById(x).innerHTML;
+        var all = document.getElementsByClassName('list_item');
+          for (var i = 0; i < all.length; i++) 
+          {
+            all[i].style.backgroundColor = 'white';
+            all[i].style.color = 'black';
+          }
+        document.getElementById(x).style.backgroundColor = "#0000ff";
+        document.getElementById(x).style.color = "white";
+
+
+      }
+    </script>
+     <script type="text/javascript">
+    function menu(value)
+        {
+            if(value==1)
+            {
+                document.getElementById("menu_btn").style.display="none";
+                document.getElementById("menu_cross").style.display="inline";
+                document.getElementById("navbar").style.display="block";
+
+                document.documentElement.style.position = "fixed";
+            }
+            else if(value==2)
+            {
+                document.getElementById("navbar").style.display="none";
+                document.getElementById("menu_btn").style.display="inline";
+                document.getElementById("menu_cross").style.display="none";
+
+                document.documentElement.style.position = "static";
+            }
+        }
+      </script>
+      <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    var x = document.getElementsByClassName("accordion-collapse");
+
+
+    for (i = 0; i < li.length; i++) {
+        for(j=0;j< x.length;j++)
+        {
+          x[j].classList.add("show");
+        }
+        a = li[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            for(j=0;j< x.length;j++)
+        {
+          x[j].classList.remove("show");
+        }
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

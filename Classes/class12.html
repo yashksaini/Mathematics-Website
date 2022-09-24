@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- Local CSS Files Start -->
+
+    <link rel="stylesheet" type="text/css" href="../Styles/css.css">
+
+    <link rel="stylesheet" type="text/css" href="../Styles/class.css">
+
+    <!-- Local CSS Files End -->
+
+    <!-- Head Icon -->
+    
+   <link rel="icon" type="image/x-icon" href="../Images/play-logo.png">
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  	<!-- Animation Link -->
+
+  	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
+
+    <title>Class 12</title>
+  </head>
+  <body>
+
+<!-- Header Start --->
+
+    <div  class="bg-white animate__animated animate__slideInRight" id="navbar">
+        <div class="nav_div">
+          <nav>
+            <a href="../index.html#home" onclick="menu('2');">Home</a><br><br>
+            <a href="../index.html#about" onclick="menu('2');">About</a><br><br>
+
+              <div class="dropdown">
+              <a class="dropbtn">Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html" onclick="menu('2');">Class 10</a>
+                  <a href="class11.html" onclick="menu('2');">Class 11</a>
+                  <a href="class12.html" onclick="menu('2');">Class 12</a>
+                </div>
+              </div><br><br>
+            <a href="../index.html/#school" onclick="menu('2');">School</a>
+          </nav>
+
+      </div>
+    </div>
+
+    <header>
+      <div class="container-fluid bg-white header-cont fixed-top">
+
+          <div style="position: relative;z-index: 4;position: absolute;left: 0;top: 0;">
+            <img src="../Images/play-logo.png" class="logo-img">
+            <p class="logo-text">MATHEMATICS</p>
+          </div>
+
+        <div class="header">
+          <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+
+              <div class="dropdown">
+              <a class="dropbtn" >Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html">Class 10</a>
+                  <a href="class11.html">Class 11</a>
+                  <a href="class12.html">Class 12</a>
+                </div>
+              </div>
+            <a href="../index.html#school">School</a>
+          </nav>
+        </div>
+        <div class="menu_button">
+          <button  class="btn menu_bar">
+
+            <!-- Bars Icon -->
+
+            <svg  id="menu_btn" style="margin-right: 10px;background-color: white;"  onclick="menu('1')" class="menu_btn " width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+            <!-- Cross Icon -->
+
+            <span id="menu_cross" onclick="menu('2');" style="display: none;"><svg style="margin-right: 10px;background-color: white;" class="menu_btn" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></span>
+        
+          </button>
+        </div>
+      </div>
+    </header>
+<!-- Header End --->
+
+<!-- Class Start -->
+
+    <div class="container-fluid" style="padding-top:100px;padding-bottom: 150px;">
+      <div class="row">
+        <div class="col-lg-7 class_play_container">
+          <div class="class_play">
+              <iframe id="youtube" src="https://www.youtube.com/embed/CnvnMG2D5Io" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"  allowfullscreen></iframe>
+          </div>
+          <div class="class_play_text">
+            <div class="play_text">
+              <h6 id="topic"></h6>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="col-lg-5 class_play_container" id="myUL">
+          
+      <h1 style="text-align: center;margin-top: 10px;">Class 12 Video Lectures</h1>
+          <div class="d-flex justify-content-center align-items-center">
+
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for lecture.." title="Type in a name">
+
+          <button class="btn-primary btn s_btn"><i class="fas fa-search"></i></button>
+          </div>
+
+          
+
+<!-- Class 12 Chapter 1 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c1" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 1 ( Relations and Functions ) <span class="badge bg-light tp"> 19 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="CnvnMG2D5Io" onclick="play('CnvnMG2D5Io')">1. Cartesian product, relation as a subset of it, empty and universal relation <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="s1EMIA4JZZQ" onclick="play('s1EMIA4JZZQ')">2. Reflexive, Symmetric, Transitive and equivalence relations, ncert examples <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="mVYKY5Qq5kU" onclick="play('mVYKY5Qq5kU')">3. Equivalence relation_more ncert examples and equivalence class<span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="cs-YveLIr6I" onclick="play('cs-YveLIr6I')">4. How to idenitify Reflexive, symmetric and transitive relations <span class="badge bg-white float-end"> 12min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="mno5x4_VCBc" onclick="play('mno5x4_VCBc')">5. How to show a relation to be non-reflexive, non-symmetric or non-transitive, how to find out equivalence class <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="SxmQT6SG8Mk" onclick="play('SxmQT6SG8Mk')">6. Function as a special relation_various examples<span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="X2xb80SQuIg" onclick="play('X2xb80SQuIg')">7.Various Definitions with examples of one-one,onto,many-one,into and bijective functions <span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="XM5Y00LaTxc" onclick="play('XM5Y00LaTxc')">8. Various Questions to identify type of a function and also method to prove one-one and onto function<span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="u5LfaCQEVbc" onclick="play('u5LfaCQEVbc')">9. A one-one function on a finite set is onto and vice-versa<span class="badge bg-white float-end"> 8min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="_1E7LNN1itU" onclick="play('_1E7LNN1itU')">10. NCERT Exercise 1.2 Que No 1 to 7 <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="1zad7omgyrg" onclick="play('1zad7omgyrg')">11. NCERT Exercise 1.2 Que. 8 to 12 <span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="zPEJFI_cT9E" onclick="play('zPEJFI_cT9E')">12. Composition of Functions through examples <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="fvMunyino9w" onclick="play('fvMunyino9w')">13. More Questions on composition of Functions and Summary <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="-P7OnJLPsao" onclick="play('-P7OnJLPsao')">14. Inverse Functions_to show a function to be invertible and to find its inverse <span class="badge bg-white float-end"> 39min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="-2UW0GgPI_o" onclick="play('-2UW0GgPI_o')">15. Inverse of composite functions_NCERT Example <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="XQBpmc28yYk" onclick="play('XQBpmc28yYk')">16. Inverse of composite function_ A theorem<span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="HuDVRf3RVSw" onclick="play('HuDVRf3RVSw')">17. Inverse of Quadratic Functions <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="X4d0UqDb_vY" onclick="play('X4d0UqDb_vY')">18. Uniqueness of Inverse of a function <span class="badge bg-white float-end"> 7min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="GR-Qv-oDh9E" onclick="play('GR-Qv-oDh9E')">19. More Questions on Invertible Functions <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 1 End -->
+
+<!-- Class 12 Chapter 2 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c2" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 2 ( Inverse Trigonometric Functions ) <span class="badge bg-light tp"> 13 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="qg235lvKJk8" onclick="play('qg235lvKJk8')">1. Inverse of Sine Function_Principal Value Branch, Domain and Range <span class="badge bg-white float-end"> 35min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="IhVjy_MjIsg" onclick="play('IhVjy_MjIsg')">2. Inverse Trigonometric Functions_Principal Value Branch, Domain and Range, Questions 1 to 10 of Exercise 2.1 <span class="badge bg-white float-end"> 44min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="1H26ostU0FE" onclick="play('1H26ostU0FE')">3. Properties of Inverse Trigonometric Functions Part_1<span class="badge bg-white float-end"> 8min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="_n7DoRtbjxY" onclick="play('_n7DoRtbjxY')">4. Properties of Inverse Trigonometric Functions Part_2<span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="_E6bNJ0F-xA" onclick="play('_E6bNJ0F-xA')">5. Properties of Inverse Trigonometric Functions Part_3 <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="keQ2Uv89Mcw" onclick="play('keQ2Uv89Mcw')">6. Properties of Inverse Trigonometric Functions Part_4<span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="XSrx2Rlw2Yg" onclick="play('XSrx2Rlw2Yg')">7. Properties of Inverse Trigonometric Functions Part_5<span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="92wdcNLBe-o" onclick="play('92wdcNLBe-o')">8. Proof of tan^-1 (x)+tan^-1(y) =tan^-1((x+y)/(1-xy)) ,when xy less than 1 <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="kGDL1q-uPkM" onclick="play('kGDL1q-uPkM')">9. Proof of tan^-1 (x)+tan^-1(y) =? ,when xy>1 <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="GzehaELrXpU" onclick="play('GzehaELrXpU')">10. Proof of tan^-1 (x)-tan^-1(y) =?  <span class="badge bg-white float-end"> 17min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="auA0HFX3sSY" onclick="play('auA0HFX3sSY')">11. Formula to convert [2 tan^-1(x)]  in terms of sin^-1(x)  <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="YpJNpojeZGw" onclick="play('YpJNpojeZGw')">12. Formula to convert [2 tan^-1(x)]  in terms of cos^-1(x)  <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="uWepxjME2GE" onclick="play('uWepxjME2GE')">13. Formula to convert [2 tan^-1(x)]  in terms of tan^-1(x)  <span class="badge bg-white float-end"> 11min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 2 End -->
+
+<!-- Class 12 Chapter 3 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c3" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 3 ( Matrices ) <span class="badge bg-light tp"> 11 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="8Tl1gh-I4lA" onclick="play('8Tl1gh-I4lA')">1. Matrix: An Introduction <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="hcn6sVOwnRs" onclick="play('hcn6sVOwnRs')">2. Order of a Matrix and General form of a matrix <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="jJkjxydzebE" onclick="play('jJkjxydzebE')">3. Types of Matrices and Equality of Matrices<span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="3IxWXOqRpcI" onclick="play('3IxWXOqRpcI')">4. Addition of Matrices and Multiplication by a scalar of a matrix, Properties of these operations on matrices<span class="badge bg-white float-end"> 49min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="byreqzAlLMc" onclick="play('byreqzAlLMc')">5. Matrix Multiplication, Non Commutativity of matrix multiplication, Zero matrix as a product of two non-zero matrices <span class="badge bg-white float-end"> 48min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="cj61Xw9Vdgw" onclick="play('cj61Xw9Vdgw')">6. The associative and the distributive law of matrix multiplication, the existence of multiplicative identity <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="kJltSZ98WMg" onclick="play('kJltSZ98WMg')">7. Transpose of a matrix, Properties of transpose of the matrices<span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="-PGC0HklVfo" onclick="play('-PGC0HklVfo')">8. Symmetric and skew symmetric matrices, two related theorems <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Fa6LLHM0erY" onclick="play('Fa6LLHM0erY')">9. To express given square matrix as the sum of a symmetric and a skew symmetric matrix <span class="badge bg-white float-end"> 17min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="8fWe3lhcyqU" onclick="play('8fWe3lhcyqU')">10. To verify that a given matrix equation is satisfied by a given matrix equation <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="hUfA3cWgMts" onclick="play('hUfA3cWgMts')">11. Questions on Matrix Equations <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 3 End -->
+
+<!-- Class 12 Chapter 4 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c4" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 4 ( Determinants ) <span class="badge bg-light tp"> 16 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c4" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="KBlwv6owPfk" onclick="play('KBlwv6owPfk')">1. Determinants_Introduction and Expansion of determinants up to order 3<span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="1nSoiP2FnOs" onclick="play('1nSoiP2FnOs')">2. Expanding a determinant along any row or column gives the same value <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="MZbh4bm5dxs" onclick="play('MZbh4bm5dxs')">3. If A = k B, then det A = k^n  det B where A and B are square matrices of order n. <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="mjM3j4WDeq4" onclick="play('mjM3j4WDeq4')">4. Properties of Determinants <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="77q2sb6e1Io" onclick="play('77q2sb6e1Io')">5. Properties of Determinants ..Continued  <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Y54mBHB_E3c" onclick="play('Y54mBHB_E3c')">6. Finding value of Determinant using Properties of Determinants  <span class="badge bg-white float-end"> 17min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="0Vgl9kzUqoc" onclick="play('0Vgl9kzUqoc')">7. Area of a triangle using Determinant <span class="badge bg-white float-end"> 28min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="CkiOnrfA4to" onclick="play('CkiOnrfA4to')">8. Expansion of a determinant in compact form using minors and cofactors <span class="badge bg-white float-end"> 45min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="bWTHtluTkcM" onclick="play('bWTHtluTkcM')">9. Adjoint of a Matrix <span class="badge bg-white float-end"> 33min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="JC84QiBhBT4" onclick="play('JC84QiBhBT4')">10. Theorem: A(adj A) = (adj A)A = (det A)I  <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="NbkX5jskfR8" onclick="play('NbkX5jskfR8')">11. Theorem: det(AB)  = (det A).(det B) <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="xOaGTAvebkw" onclick="play('xOaGTAvebkw')">12. Result: det (adj A) =(det A)^(n-1)  <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="A3Hv8hWlDdo" onclick="play('A3Hv8hWlDdo')">13. Singular and non singular, Invertible and non invertible Matrices. If A and B are non singular, then AB and BA are also non-singular. A is invertible iff A is non singular. Also A^(-1)=(1/det A) adjA  <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="L1Xk2nyi7lA" onclick="play('L1Xk2nyi7lA')">14. More Questions on Inverse of a matrix  <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="0MOHKrcmI_c" onclick="play('0MOHKrcmI_c')">15. Solving system of equations by matrix method<span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Y0FmYkPktB0" onclick="play('Y0FmYkPktB0')">16. Solving More Questions by matrix method  <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 4 End -->
+
+<!-- Class 12 Chapter 5 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c5" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 5 ( Continuity and Differentiability ) <span class="badge bg-light tp"> 15 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c5" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+
+                              
+                              <li class="list-group-item list_item" id="UElEiJf1XS0" onclick="play('UElEiJf1XS0')">1.Meaning of continuity and Continuity of a function at a point <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="kuek9uF6Zb4" onclick="play('kuek9uF6Zb4')">2. Continuous function and continuous function on a close interval <span class="badge bg-white float-end"> 33min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="O1yApszdPIY" onclick="play('O1yApszdPIY')">3. Concept of infinity and Continuity of a function <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="8j8Tq_RRgMw" onclick="play('8j8Tq_RRgMw')">4. Continuity of a polynomial function and points of discontinuity of the  greatest integer function <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="GO7sSrmOFAA" onclick="play('GO7sSrmOFAA')">5. Algebra of continuous functions _  Two Theorems and Their Applications <span class="badge bg-white float-end"> 46min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="oMdks9Ow2IA" onclick="play('oMdks9Ow2IA')">6. Differentiability of a function and every differentiable function is continuous but its converse is not true. <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="xkJrgg2K6Ck" onclick="play('xkJrgg2K6Ck')">7. Algebra of derivatives and Chain Rule for Derivatives of composite functions <span class="badge bg-white float-end"> 34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="GHXq5Jwq8YY" onclick="play('GHXq5Jwq8YY')">8. Explicit and Implicit functions and Derivatives of Implicit functions <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="2Ru6Vh6z_go" onclick="play('2Ru6Vh6z_go')">9. Derivatives of Inverse Trigonometric Functions <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="9p3fUqa-UU4" onclick="play('9p3fUqa-UU4')">10. Exponential and Logarithmic Functions <span class="badge bg-white float-end"> 43min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="8_m0VBWH1Mw" onclick="play('8_m0VBWH1Mw')">11. Derivatives of expressions involving Exponential and Logarithmic functions <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="zV7dx0u7wsQ" onclick="play('zV7dx0u7wsQ')">12. Logarithmic Differentiation <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="EnbPQlQvxPE" onclick="play('EnbPQlQvxPE')">13. Logarithmic Differentiation ...continued <span class="badge bg-white float-end">38min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="_xxWCOS7Boo" onclick="play('_xxWCOS7Boo')">14. Derivatives of Functions in Parametric Forms <span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="uOfbnTQwEJ8" onclick="play('uOfbnTQwEJ8')">15. Second Order Derivatives <span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 5 End -->
+
+<!-- Class 12 Chapter 6 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c6" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 6 ( Application of Derivatives ) <span class="badge bg-light tp"> 10 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="CoGYinvFUL0" onclick="play('CoGYinvFUL0')">1. Geometric interpretation of derivative of a function and Increasing and Decreasing Functions <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="O1aPWBVTyVA" onclick="play('O1aPWBVTyVA')">2. General Technique to find intervals where given function is increasing or decreasing <span class="badge bg-white float-end"> 34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="IwAfHipeKgY" onclick="play('IwAfHipeKgY')">3. Equations of Tangent and Normal at a point to a curve<span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="PUM4B0bzB2Q" onclick="play('PUM4B0bzB2Q')">4. More Questions on Tangents and Normals to a curve <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="56Dmqq9jNic" onclick="play('56Dmqq9jNic')">5. Maximum and Minimum Value of a function in an interval <span class="badge bg-white float-end"> 27min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="erYgOWr0mKY" onclick="play('erYgOWr0mKY')">6. Concept of Maxima and Minima <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wZQ1mkHdRUU" onclick="play('wZQ1mkHdRUU')">7. First Derivative Test <span class="badge bg-white float-end">26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wQoRe3Z3oHk" onclick="play('wQoRe3Z3oHk')">8. Second Derivative Test <span class="badge bg-white float-end">34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="CWGIIrWabX0" onclick="play('CWGIIrWabX0')">9. Finding Maximum and Minimum Values of a Function in a Closed Interval <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="c3eLz4wLj74" onclick="play('c3eLz4wLj74')">10. Practical Problems on  local maxima and local minima <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 6 End -->
+
+<!-- Class 12 Chapter 7 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c7" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 7 ( Integrals ) <span class="badge bg-light tp"> 15 </span>
+                          </button>
+                        </h2>
+                        <div id="c12c7" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+
+                              
+                              <li class="list-group-item list_item" id="I4Sv6nDmXzE" onclick="play('I4Sv6nDmXzE')">1. Integration as an Inverse Process of Differentiation <span class="badge bg-white float-end"> 32min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="xr2yKZBvCdM" onclick="play('xr2yKZBvCdM')">2. Geometrical interpretationof indefinite integral<span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Kb-bBtuFq0I" onclick="play('Kb-bBtuFq0I')">3. Some properties of indefinite integral and finding integrals using method of inspection <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="ZgoAyUHpJAc" onclick="play('ZgoAyUHpJAc')">4. Integration by substitution  <span class="badge bg-white float-end"> 38min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="d4OoqrqeLfs" onclick="play('d4OoqrqeLfs')">5. Integration using trigonometric identities  <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="XOGFPbV-G2w" onclick="play('XOGFPbV-G2w')">6. Integrals of Some Particular Functions   <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Ej1t9RF66QA" onclick="play('Ej1t9RF66QA')">7. Integrals of the functions of the type   LInear/quadratic or Linear/(Square root of quadratic)   <span class="badge bg-white float-end"> 41min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="gCdzF1cSNzA" onclick="play('gCdzF1cSNzA')">8. Integration by Partial Fractions  <span class="badge bg-white float-end"> 46min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="ePd6sWv2K4c" onclick="play('ePd6sWv2K4c')">9. Integration by Parts   <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="dTidJ5JrBTs" onclick="play('dTidJ5JrBTs')">10. Integration of e^x (f(x)+f’(x))  <span class="badge bg-white float-end"> 11min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="bmXsRwt9xOs" onclick="play('bmXsRwt9xOs')">11. Integration of the functions of the type square root of Quadratic expression  <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="G2rwXQYppL4" onclick="play('G2rwXQYppL4')">12. Area function and Fundamental Theorem of Integral Calculus  <span class="badge bg-white float-end"> 28min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="IObQfPkTNx8" onclick="play('IObQfPkTNx8')">13. Evaluation of Definite Integrals by Substitution  <span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Iah7vClDAjM" onclick="play('Iah7vClDAjM')">14. Some Properties of Definite Integrals  <span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="wxqqj5dpbvY" onclick="play('wxqqj5dpbvY')">15. Finding Definite Integrals using properties  <span class="badge bg-white float-end"> 37min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 7 End -->
+
+<!-- Class 12 Chapter 8 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12c8" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 8 ( Application of Integrals ) <span class="badge bg-light tp"> 2</span>
+                          </button>
+                        </h2>
+                        <div id="c12c8" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="pS10tv4JJas" onclick="play('pS10tv4JJas')">1. Area bounded by the curve y = f (x), x-axis and the ordinates x = a and x = b <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="OnyNQP6pOQk" onclick="play('OnyNQP6pOQk')">2. Area bounded by the curve x = g (y), y-axis and the lines y = c, y = d <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 12 Chapter 8 End -->
+        </div>
+      </div>
+    </div>
+    
+<!-- Class End -->
+
+<!-- Footer Start-->
+
+      	<div class="container-fluid" style="background-color: #0000ff;padding-top: 30px;padding-bottom: 60px;">
+        	<p  class="footer-text">Designed and Developed by Yash Kumar Saini <br> © 2021 All Rights Reserved.</p>
+      	</div>
+
+<!-- Footer End-->
+
+
+
+
+
+      
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="
+    sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+      
+
+      function play(link)
+      {
+        document.documentElement.scrollTop = 0;
+        var x = link;
+        document.getElementById("youtube").src = "https://www.youtube.com/embed/"+x+"?&autoplay=1&rel=0";
+        document.getElementById("topic").innerHTML = document.getElementById(x).innerHTML;
+        var all = document.getElementsByClassName('list_item');
+          for (var i = 0; i < all.length; i++) 
+          {
+            all[i].style.backgroundColor = 'white';
+            all[i].style.color = 'black';
+          }
+        document.getElementById(x).style.backgroundColor = "#0000ff";
+        document.getElementById(x).style.color = "white";
+
+
+      }
+    </script>
+     <script type="text/javascript">
+    function menu(value)
+        {
+            if(value==1)
+            {
+                document.getElementById("menu_btn").style.display="none";
+                document.getElementById("menu_cross").style.display="inline";
+                document.getElementById("navbar").style.display="block";
+
+                document.documentElement.style.position = "fixed";
+            }
+            else if(value==2)
+            {
+                document.getElementById("navbar").style.display="none";
+                document.getElementById("menu_btn").style.display="inline";
+                document.getElementById("menu_cross").style.display="none";
+
+                document.documentElement.style.position = "static";
+            }
+        }
+      </script>      
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    var x = document.getElementsByClassName("accordion-collapse");
+
+
+    for (i = 0; i < li.length; i++) {
+        for(j=0;j< x.length;j++)
+        {
+          x[j].classList.add("show");
+        }
+        a = li[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            for(j=0;j< x.length;j++)
+        {
+          x[j].classList.remove("show");
+        }
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- Local CSS Files Start -->
+
+    <link rel="stylesheet" type="text/css" href="../Styles/css.css">
+
+    <link rel="stylesheet" type="text/css" href="../Styles/class.css">
+
+    <!-- Head Icon -->
+    
+   <link rel="icon" type="image/x-icon" href="../Images/play-logo.png">
+
+    <!-- Local CSS Files End -->
+
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  	<!-- Animation Link -->
+
+  	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
+
+    <title>Class 11</title>
+  </head>
+  <body>
+
+<!-- Header Start --->
+
+    <div  class="bg-white animate__animated animate__slideInRight" id="navbar">
+        <div class="nav_div">
+          <nav>
+            <a href="../index.html#home" onclick="menu('2');">Home</a><br><br>
+            <a href="../index.html#about" onclick="menu('2');">About</a><br><br>
+
+              <div class="dropdown">
+              <a class="dropbtn">Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html" onclick="menu('2');">Class 10</a>
+                  <a href="class11.html" onclick="menu('2');">Class 11</a>
+                  <a href="class12.html" onclick="menu('2');">Class 12</a>
+                </div>
+              </div><br><br>
+            <a href="../index.html/#school" onclick="menu('2');">School</a>
+          </nav>
+
+      </div>
+    </div>
+
+    <header>
+      <div class="container-fluid bg-white header-cont fixed-top">
+
+          <div style="position: relative;z-index: 4;position: absolute;left: 0;top: 0;">
+            <img src="../Images/play-logo.png" class="logo-img">
+            <p class="logo-text">MATHEMATICS</p>
+          </div>
+
+        <div class="header">
+          <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+
+              <div class="dropdown">
+              <a class="dropbtn" >Student <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="class10.html">Class 10</a>
+                  <a href="class11.html">Class 11</a>
+                  <a href="class12.html">Class 12</a>
+                </div>
+              </div>
+            <a href="../index.html#school">School</a>
+          </nav>
+        </div>
+        <div class="menu_button">
+          <button  class="btn menu_bar">
+
+            <!-- Bars Icon -->
+
+            <svg  id="menu_btn" style="margin-right: 10px;background-color: white;"  onclick="menu('1')" class="menu_btn " width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+
+            <!-- Cross Icon -->
+
+            <span id="menu_cross" onclick="menu('2');" style="display: none;"><svg style="margin-right: 10px;background-color: white;" class="menu_btn" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></span>
+        
+          </button>
+        </div>
+      </div>
+    </header>
+<!-- Header End --->
+
+<!-- Class Start -->
+
+    <div class="container-fluid" style="padding-top:100px;padding-bottom: 150px;">
+      <div class="row">
+        <div class="col-lg-7 class_play_container">
+          <div class="class_play">
+              <iframe id="youtube" src="https://www.youtube.com/embed/0hSyWZokil8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"  allowfullscreen></iframe>
+          </div>
+          <div class="class_play_text">
+            <div class="play_text">
+              <h6 id="topic"></h6>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="col-lg-5 class_play_container" id="myUL">
+          
+      <h1 style="text-align: center;margin-top: 10px;">Class 11 Video Lectures</h1>
+          <div class="d-flex justify-content-center align-items-center">
+
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for lecture.." title="Type in a name">
+
+          <button class="btn-primary btn s_btn"><i class="fas fa-search"></i></button>
+          </div>
+
+          
+
+
+<!-- Class 11 Chapter 1 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c1" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 1 ( Sets ) <span class="badge bg-light tp"> 10 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="0hSyWZokil8" onclick="play('0hSyWZokil8')">1. Sets and their Representations5<span class="badge bg-white float-end"> 44min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="0zR9oCcaA-s" onclick="play('0zR9oCcaA-s')">2. The Empty Set, Finite and Infinite Sets and Equal Sets<span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="sH2lGSaHS7o" onclick="play('sH2lGSaHS7o')">3. Concept of subset of a set<span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="9Gauwq4-_jc" onclick="play('9Gauwq4-_jc')">4. Subsets of set of real numbers and Intervals as subsets of R <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="x6K5rGXb3tg" onclick="play('x6K5rGXb3tg')">5. Power Set and Universal Set <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Zh4d1RvwWlQ" onclick="play('Zh4d1RvwWlQ')">6. Venn Diagram and Union and Intersection Operations on sets <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="vx4j3BekaNA" onclick="play('vx4j3BekaNA')">7. Properties of Union and  Intersection Operations on sets <span class="badge bg-white float-end"> 34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="thuJxzMK3js" onclick="play('thuJxzMK3js')">8. Practical Problems on Union and Intersection of Two Sets <span class="badge bg-white float-end"> 15min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="H4aJg_h05es" onclick="play('H4aJg_h05es')">9. Practical Problems on Union and Intersection of Three Sets <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="zvuVLpkxyhw" onclick="play('zvuVLpkxyhw')">10. General Method to prove to sets to be equal <span class="badge bg-white float-end"> 18min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 1 End -->
+
+<!-- Class 11 Chapter 2 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c2" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 2 ( Relations and Functions ) <span class="badge bg-light tp"> 6 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              <li class="list-group-item list_item" id="mOG31Z2dYOQ" onclick="play('mOG31Z2dYOQ')">1. Cartesian Products of Sets <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="udEqFRi5nJE" onclick="play('udEqFRi5nJE')">2. Relation and its Domain, Codomain and Range <span class="badge bg-white float-end"> 44min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="57L4cgOWaTI" onclick="play('57L4cgOWaTI')">3. Function and its Domain, Codomain and Range <span class="badge bg-white float-end"> 33min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="cZZT7_F4z9Is" onclick="play('cZZT7_F4z9Is')">4. Some Real Functions, their graphs, domain, codomain and range<span class="badge bg-white float-end"> 47min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="bEm9ON8539s" onclick="play('bEm9ON8539s')">5. Some Real Functions, their graphs, domain, codomain and range…continued <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="SoU2bDaI0K0g" onclick="play('SoU2bDaI0K0g')">6. Finding Domain and Range of Real Functions <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 2 End -->
+
+<!-- Class 11 Chapter 3 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c3" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 3 ( Trigonometric Functions ) <span class="badge bg-light tp"> 14 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="FF1ykYTBgoo" onclick="play('FF1ykYTBgoo')">1. Degree Measure and Radian measure of an angle <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="jcMKtEUQypU" onclick="play('jcMKtEUQypU')">2. Relation between degree and radian <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="iGGjWZ5ezZI" onclick="play('iGGjWZ5ezZI')">3. Definition of Trigonometric Functions and Trigonometric Identities<span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="2FtHG4WvC8o" onclick="play('2FtHG4WvC8o')">4. Sign of trigonometric functions  <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="y6RO2cJThjk" onclick="play('y6RO2cJThjk')">5. Domain and Range  of trigonometric functions   <span class="badge bg-white float-end"> 30min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Vdb6-d2sH6s" onclick="play('Vdb6-d2sH6s')">6. Graphs of trigonometric functions  <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="lGyIr6FkDLY" onclick="play('lGyIr6FkDLY')">7. Given one Trigonometric Function, Finding Others  <span class="badge bg-white float-end"> 17min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="lJp-O-WCANQ" onclick="play('lJp-O-WCANQ')">8. Finding Values of Trigonometric Functions for the angle (multiple of 𝜋±𝜃)  <span class="badge bg-white float-end"> 34min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="guoOKYXl-tg" onclick="play('guoOKYXl-tg')">9.Finding Values of Trigonometric Functions for the angle (odd multiple of 𝜋/2 ±𝜃)  <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="QOyLMZh0DH4" onclick="play('QOyLMZh0DH4')">10. Trigonometric Functions of Sum and Difference of Two Angles  <span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="aEKjQ9nxVdE" onclick="play('aEKjQ9nxVdE')">11. Trigonometric Functions of Sum and Difference of Two Angles  ...continued  <span class="badge bg-white float-end"> 20min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="Pu2gfEcV8jY" onclick="play('Pu2gfEcV8jY')">12. Trigonometric Identities for twice and thrice of an angle <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="q8Ez2zP2Olw" onclick="play('q8Ez2zP2Olw')">13. Trigonometric Identities for conversion of sum or difference into product and vice versa  <span class="badge bg-white float-end"> 23min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="KG2E7nXl_bQ" onclick="play('KG2E7nXl_bQ')">14. Some problems on Trigonometric Identities <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 3 End -->
+
+<!-- Class 11 Chapter 5 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c5" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 5 ( Complex Numbers and Quadratic Equations ) <span class="badge bg-light tp"> 4 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c5" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+                              
+                              <li class="list-group-item list_item" id="McUB4lu3pfk" onclick="play('McUB4lu3pfk')">1. Concept of 𝑖 (iota) and square root of a negative number  <span class="badge bg-white float-end"> 16min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="chZfOdmhXXA" onclick="play('chZfOdmhXXA')">2. Definition of a complex Number, Addition and Subtraction of  Complex Numbers <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="xnWtbTb4OfE" onclick="play('xnWtbTb4OfE')">3. Multiplication and Division of Complex Numbers <span class="badge bg-white float-end"> 27min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="BUV0Rh64ZFM" onclick="play('BUV0Rh64ZFM')">4. The Modulus and the Conjugate of a Complex Number and Algebraic Identities for Complex Numbers  <span class="badge bg-white float-end"> 26min <i class="far fa-play-circle"></i></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 5 End -->
+
+<!-- Class 11 Chapter 6 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c6" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 6 ( Linear Inequalities ) <span class="badge bg-light tp"> 5 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+
+                              <li class="list-group-item list_item" id="4r0loNjjZ2U" onclick="play('4r0loNjjZ2U')">1. Inequalities and their types  <span class="badge bg-white float-end"> 21min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="17r2oTo3ZI8" onclick="play('17r2oTo3ZI8')">2.Inequalities and their types  <span class="badge bg-white float-end"> 29min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="LTq1VU3TZbw" onclick="play('LTq1VU3TZbw')">3.Graphical representation of Solutions of Linear Inequalities in One Variable  <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="1JhOLY42AG0" onclick="play('1JhOLY42AG0')">4.Graphical Solution of Linear Inequalities in One Variable <span class="badge bg-white float-end"> 19min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="sHGpZ4dpRus" onclick="play('sHGpZ4dpRus')">5. Graphical Solution of Linear Inequalities in Two Variables  <span class="badge bg-white float-end"> 22min <i class="far fa-play-circle"></i></span></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 6 End -->
+
+<!-- Class 11 Chapter 10 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c10" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 10 ( Straight Lines ) <span class="badge bg-light tp"> 11 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c10" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+
+                              <li class="list-group-item list_item" id="KhIrX3_6vD4" onclick="play('KhIrX3_6vD4')">1. Basics of coordinate geometry <span class="badge bg-white float-end"> 27min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="-Ighaimfoa8" onclick="play('-Ighaimfoa8')">2. Slope of a Line <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+                              
+
+                              <li class="list-group-item list_item" id="v9VWdq2Gz-U" onclick="play('v9VWdq2Gz-U')">3. Condition for two lines to be  parallel and Collinearity of three points <span class="badge bg-white float-end"> 13min <i class="far fa-play-circle"></i></span></li>
+
+
+                              <li class="list-group-item list_item" id="ZST6QYJxFF8" onclick="play('ZST6QYJxFF8')">4. Condition for two lines to be perpendicular <span class="badge bg-white float-end"> 10min <i class="far fa-play-circle"></i></span></li> 
+
+                              <li class="list-group-item list_item" id="bkUnMFR4h3Y" onclick="play('bkUnMFR4h3Y')">5. Angle between two lines  <span class="badge bg-white float-end"> 25min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="3-zW-Rfi4aQ" onclick="play('3-zW-Rfi4aQ')">6.Equations of Horizontal and vertical lines and Point-slope form of the equation of a line <span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="SM5VmgJd-Yk" onclick="play('SM5VmgJd-Yk')">7.Various forms of the Equation of a Line <span class="badge bg-white float-end"> 54min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="IFSZI8Nz1EA" onclick="play('IFSZI8Nz1EA')">8.General Equation of a Line and its conversion into slope intercept form, intercept form and normal form <span class="badge bg-white float-end"> 24min <i class="far fa-play-circle"></i></span></li>
+                              
+
+                              <li class="list-group-item list_item" id="ohyL8fdGLII" onclick="play('ohyL8fdGLII')">9.Distance of a Point From a Line <span class="badge bg-white float-end"> 31min <i class="far fa-play-circle"></i></span></li>
+
+                              <li class="list-group-item list_item" id="A-KrUS3PZDg" onclick="play('A-KrUS3PZDg')">10.General Condition for Two Lines to be parallel  or perpendicular <span class="badge bg-white float-end"> 36min <i class="far fa-play-circle"></i></span></li> 
+
+                              <li class="list-group-item list_item" id="GHMpmnuC6Y4" onclick="play('GHMpmnuC6Y4')">11.Distance between Two Parallel Lines <span class="badge bg-white float-end"> 14min <i class="far fa-play-circle"></i></span></li> 
+
+                              
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 10 End -->
+
+<!-- Class 11 Chapter 11 Start-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11c11" aria-expanded="false" aria-controls="collapseTwo">
+                           Chapter 10 ( Conic Sections ) <span class="badge bg-light tp"> 1 </span>
+                          </button>
+                        </h2>
+                        <div id="c11c11" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-group">
+
+                              <li class="list-group-item list_item" id="HRKPQQ697rk" onclick="play('HRKPQQ697rk')">2.Circle <span class="badge bg-white float-end"> 27min <i class="far fa-play-circle"></i></span></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- Class 11 Chapter 11 End -->
+
+        </div>
+      </div>
+    </div>
+    
+<!-- Class End -->
+
+<!-- Footer Start-->
+
+      	<div class="container-fluid" style="background-color: #0000ff;padding-top: 30px;padding-bottom: 60px;">
+        	<p  class="footer-text">Designed and Developed by Yash Kumar Saini <br> © 2021 All Rights Reserved.</p>
+      	</div>
+
+<!-- Footer End-->
+
+
+
+
+
+      
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="
+    sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+      
+
+      function play(link)
+      {
+        document.documentElement.scrollTop = 0;
+        var x = link;
+        document.getElementById("youtube").src = "https://www.youtube.com/embed/"+x+"?&autoplay=1&rel=0";
+        document.getElementById("topic").innerHTML = document.getElementById(x).innerHTML;
+        var all = document.getElementsByClassName('list_item');
+          for (var i = 0; i < all.length; i++) 
+          {
+            all[i].style.backgroundColor = 'white';
+            all[i].style.color = 'black';
+          }
+        document.getElementById(x).style.backgroundColor = "#0000ff";
+        document.getElementById(x).style.color = "white";
+
+
+      }
+    </script>
+
+     <script type="text/javascript">
+    function menu(value)
+        {
+            if(value==1)
+            {
+                document.getElementById("menu_btn").style.display="none";
+                document.getElementById("menu_cross").style.display="inline";
+                document.getElementById("navbar").style.display="block";
+
+                document.documentElement.style.position = "fixed";
+            }
+            else if(value==2)
+            {
+                document.getElementById("navbar").style.display="none";
+                document.getElementById("menu_btn").style.display="inline";
+                document.getElementById("menu_cross").style.display="none";
+
+                document.documentElement.style.position = "static";
+            }
+        }
+      </script>
+      
+      <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    var x = document.getElementsByClassName("accordion-collapse");
+
+
+    for (i = 0; i < li.length; i++) {
+        for(j=0;j< x.length;j++)
+        {
+          x[j].classList.add("show");
+        }
+        a = li[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            for(j=0;j< x.length;j++)
+        {
+          x[j].classList.remove("show");
+        }
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
